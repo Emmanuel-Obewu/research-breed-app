@@ -6,7 +6,7 @@ import Button from './LongButton'
 function Research() {
   return (
       <>
-    <div className="container mx-auto flex flex-col md:flex-row justify-between items-center p-8">
+    <div className="container mx-auto flex flex-col md:flex-row justify-between items-center ">
       
       <div className="md:w-0.4 w-full mx-5">
         <img src="graduates.jpg" alt="Graduates" className="w-full rounded-lg shadow-lg" />

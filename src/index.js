@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import HowDtWorks from './DanTSection';
 import Featured from './Featured';
 import Navbar from './Heading';
 import HeroSection from './Main';
@@ -15,6 +16,7 @@ ReactDOM.render(
  <HeroSection/>
  <Featured/>
  <Research/>
+ <HowDtWorks/>
  </>,
     document.getElementById("root")
 )
