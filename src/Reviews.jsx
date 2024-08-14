@@ -24,7 +24,7 @@ const Reviews = () => {
         {
             name: 'David Liu',
             title: 'Independent Researcher',
-            image: 'girl.png',
+            image: '/path/to/image4.jpg',
             review: 'As an independent researcher, I appreciate the flexibility and support offered by this platform...',
         },
         {
@@ -48,7 +48,7 @@ const Reviews = () => {
                     <h2 className="text-3xl font-extrabold text-white">Reviews</h2>
                     <p className="text-lg text-white mt-2">4.9 ⭐ Over 1000 reviews</p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center justify-items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {reviews.map((review, index) => (
                         <ReviewCard key={index} {...review} />
                     ))}
