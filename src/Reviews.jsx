@@ -1,7 +1,9 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
 import ReviewCard from './ReviewCard';
 
-const Reviews = () => {
+const ReviewsSection = () => {
     const reviews = [
         {
             name: 'Jane Doe',
@@ -48,14 +50,35 @@ const Reviews = () => {
                     <h2 className="text-3xl font-extrabold text-white">Reviews</h2>
                     <p className="text-lg text-white mt-2">4.9 ⭐ Over 1000 reviews</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <Swiper
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    loop={true}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    }}
+                >
                     {reviews.map((review, index) => (
-                        <ReviewCard key={index} {...review} />
+                        <SwiperSlide key={index}>
+                            <ReviewCard {...review} />
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
             </div>
         </div>
     );
 }
 
-export default Reviews;
+export default ReviewsSection;
