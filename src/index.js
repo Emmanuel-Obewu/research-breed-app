@@ -5,6 +5,8 @@ import Featured from './Featured';
 import Navbar from './Heading';
 import HeroSection from './Main';
 import Research from './researchSection';
+import Reviews from './Reviews';
+
 // import Img from './logo512.png';
 
 import  './styles.css';
@@ -17,6 +19,7 @@ ReactDOM.render(
  <Featured/>
  <Research/>
  <HowDtWorks/>
+ <Reviews/>
  </>,
     document.getElementById("root")
 )
