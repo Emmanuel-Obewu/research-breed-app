@@ -6,37 +6,37 @@ const Reviews = () => {
         {
             name: 'Jane Doe',
             title: 'Researcher in Biology',
-            image: '/path/to/image1.jpg',
+            image: 'girl.png',
             review: 'As a biologist conducting research in the field, I have found this platform to be an invaluable resource...',
         },
         {
             name: 'Michael Brown',
             title: 'Academic Librarian',
-            image: '/path/to/image2.jpg',
+            image: 'girl.png',
             review: 'I work as an academic librarian, and I frequently recommend this platform to researchers...',
         },
         {
             name: 'Sarah Johnson',
             title: 'Undergraduate Student in History',
-            image: '/path/to/image3.jpg',
+            image: 'girl.png',
             review: 'Even as an undergraduate student, I’ve found this platform to be incredibly helpful for my research projects...',
         },
         {
             name: 'David Liu',
             title: 'Independent Researcher',
-            image: '/path/to/image4.jpg',
+            image: 'girl.png',
             review: 'As an independent researcher, I appreciate the flexibility and support offered by this platform...',
         },
         {
             name: 'Alex Nguyen',
             title: 'PhD Candidate in Environmental Science',
-            image: '/path/to/image5.jpg',
+            image: 'girl.png',
             review: 'Thanks to this platform’s real-time collation and updating of current journals, I can access the most recent studies...',
         },
         {
             name: 'Maria Gomez',
             title: 'Early Career Scholar in Sociology',
-            image: '/path/to/image6.jpg',
+            image: 'girl.png',
             review: 'What truly sets this platform apart is its technological support system...',
         },
     ];
